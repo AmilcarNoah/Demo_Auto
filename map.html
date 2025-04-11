@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Maps!!</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div><strong>Autocrization and Democrization</strong></div>
+        <div>
+          <nav>
+            <a href="index.html">Overview</a>
+            <a href="content.html">Europe</a>
+            <a href="content.html">The Americas</a>
+            <a href="content.html">Asia</a>
+            <a href="content.html">Africa</a>
+            <a href="map.html">Global Map</a>
+          </nav>
+        </div>
+      </header>
+    
+    <!-- <div><h1 class="map-header">Evaluating Democracy Across the World</h1></div>  -->
+    
+
+    <div class="main">
+        <section class="map">
+            <div class="container">
+                <div id="leaflet-map"></div>
+            </div>
+            <div class="caption">
+                <figcaption class="icap">Democracies in the World</figcaption>
+            </div>
+        </section>
+    </div>
+
+    
+
+
+    <script>
+        //This is the Script for the Leaflet map// 
+
+        let map = L.map('leaflet-map').setView([48.2, 16.4], 4);
+        let layer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    });
+        layer.addTo(map)
+
+       
+   
+    </script>
+
+    <footer>
+        <!-- Attributions -->
+        <p>Attributions go here?</p>
+        <i>V-Dem Dataset | License: Open Data (CC BY-SA)</i>
+    </footer>
+
+</body>
+
+</html>

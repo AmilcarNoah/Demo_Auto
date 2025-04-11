@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feature Card Test</title>
+  <link rel="stylesheet" href="cont_styles.css">
+</head>
+<body>
+
+    <header>
+        <div><strong>Autocrization and Democrization</strong></div>
+        <div>
+          <nav>
+            <a href="index.html">Overview</a>
+            <a href="content.html">Europe</a>
+            <a href="content.html">The Americas</a>
+            <a href="content.html">Asia</a>
+            <a href="content.html">Africa</a>
+            <a href="map.html">Global Map</a>
+          </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Regional Matters?</h1>
+        
+        <div class="card-grid">
+            <!-- First row in grid-->
+            <div class="feature-card">
+                <div class="card-content">
+                    <h3>Article Name</h3>
+                    <p>This is where the description or summary of the articles go.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card-image">
+                    <img src="images/Democracy_Index_2024.svg.png" alt="Article Name">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-content">
+                    <h3>Article Name</h3>
+                    <p>This is where the description or summary of the articles go.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card-image">
+                    <img src="images/Democracy_Index_2024.svg.png" alt="Article Name">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-content">
+                    
+                    <h3>Article Name</h3>
+                    <p>This is where the description or summary of the articles go.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card-image">
+                    <img src="images/Democracy_Index_2024.svg.png" alt="Article Name">
+                </div>
+            </div>
+
+            <!-- Second row in grid -->
+            <div class="feature-card">
+                <div class="card-content">
+                    <h3>Article Name</h3>
+                    <p>This is where the description or summary of the articles go.</p>
+                    <button >Read More</button>
+                </div>
+                <div class="card-image">
+                    <img src="images/Democracy_Index_2024.svg.png" alt="Article Name">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-content">
+                    <h3>Article Name</h3>
+                    <p>This is where the description or summary of the articles go.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card-image">
+                    <img src="images/Democracy_Index_2024.svg.png" alt="Article Name">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-content">
+                    <h3>Article Names</h3>
+                    <p>This is where the description or summary of the articles go.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card-image">
+                    <img src="images/Democracy_Index_2024.svg.png" alt="Article Name">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollSlider(direction) {
+          const slider = document.getElementById('sliderTrack');
+          const cardWidth = slider.querySelector('.card').offsetWidth + 20; // +gap
+          slider.scrollBy({
+            left: direction * cardWidth,
+            behavior: 'smooth'
+          });
+        }
+    </script>
+
+    <footer>
+        <i>Attributions go here?</i>
+    </footer>
+
+
+</body>
+</html>
