@@ -1,26 +1,42 @@
-body {
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+/* body {
   background-color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-.upper-box{
+/* .upper-box{
   display: flex;
   min-width: 100%; 
   flex-direction: column; 
   position: fixed;
   top: 0px;
-}
+} */
 
-header{
+/* header{
   display: flex;
   width: 100%;
   background-color: white;
   justify-content: space-between;
+} */
+header { 
+    background: rgba(0, 0, 0, 0.751); 
+    color: white; 
+    padding: 1em 2em; 
+    display: flex; 
+    /* position: fixed; */
+    justify-content: space-between; 
+    align-items: center;
+    left:0 5px; 
+    top: 0;
+    /* z-index: 10; */
 }
-
-.logo {
+/* .logo {
   display: flex;
   margin-left: 10px;
   padding: 5px;
@@ -30,9 +46,9 @@ header{
   align-content: center;
   align-items: center;
   color: black;
-}
+} */
 
-.home .header .navbar a{
+/* .home .header .navbar a{
   text-decoration: none;
   color: black;
 }
@@ -53,17 +69,31 @@ header{
   font-weight: bold;
   color: #571584
   ; /* or any color you want to highlight */
-  border-bottom: 4px solid #571584 ;
+  /* border-bottom: 4px solid #571584 ;
 }
 
 .home .header .navbar a:hover{
   color: #389A8C;
 
+} */
+nav{
+    display:flex;
+}
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin-left: 1em;
+}
+nav :hover{
+    background-color: rgba(188, 189, 189, 0.725);
 }
 
 
+div{
+    display: block;
+}
 .home .main {
-  background-image: url(../media/front2.png);
+  background-image: url('media/front2.png');
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
@@ -161,6 +191,7 @@ header{
 }
 
 .home .second .second-box{
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
