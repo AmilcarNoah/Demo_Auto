@@ -19,13 +19,46 @@ header {
     z-index: 10;
 }
 
-footer { 
+/* Footer Styles */
+/* footer { 
     background-color: #445da6; 
     color: white; 
     padding: 2em; 
     text-align: center; 
+} */
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #002E74;
+    width: 100%;
+    color: rgb(207, 207, 207);
+    font-family: 'roboto';
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 0px 15px 0px;
+}
+  
+footer p{
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
 }
 
+/*Nav Bar Styling */
 nav{
     display:flex;
 }
