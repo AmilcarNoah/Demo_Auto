@@ -81,7 +81,7 @@ transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;   /*sliding effect */
 }
 
 .card-content {
@@ -126,6 +126,8 @@ transition: transform 0.3s, box-shadow 0.3s;
     color: #4CAF50;
     margin-bottom: 15px;
 }
+
+/*styling content */
 
 h3 {
     margin: 0 0 15px 0;
