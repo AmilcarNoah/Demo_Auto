@@ -13,7 +13,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.6/proj4.js"></script>
+    <script src="https://unpkg.com/proj4leaflet"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -26,7 +27,7 @@
             <a href="index.html"class="overview">Home</a>
             <a href="overview.html">Overview</a>
             <a href="content.html">Europe</a>
-            <a href="content.html">The Americas</a>
+            <a href="draft.html">The Americas</a>
             <a href="content.html">Asia</a>
             <a href="content.html">Africa</a>
             <a href="map.html">Map</a>
@@ -48,8 +49,6 @@
         </section>
     </div>
 
-    
-
 
     <script>
         //This is the Script for the Leaflet map// 
@@ -60,7 +59,20 @@
                     });
         layer.addTo(map)
 
-       
+       fetch('map/world_demo.json')
+            .then(response => response.json())
+            .then(data => {
+                let geojsonLayer = L.geoJSON(data, {
+                    onEachFeature: function (feature, layer) {
+                        // Optional: bind a popup to each feature
+                        if (feature.properties && feature.properties.name) {
+                            layer.bindPopup(feature.properties.name);
+                        }
+                    }
+                });
+                geojsonLayer.addTo(map);
+            })
+            .catch(error => console.error('Error loading the GeoJSON file:', error));
    
     </script>
 
